@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-// Temporary Image
-import aboutImage from "@/assets/about/about-1.jpg"; 
+import aboutImage from "@/assets/images/about/about-1.jpg"; 
 
 const features = [
   "Experienced & Qualified Faculty",
