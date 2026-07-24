@@ -3,6 +3,7 @@ import Stats from "@/components/sections/Stats";
 import About from "@/components/sections/About";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Academics from "@/components/sections/Academics";
+import Facilities from "@/components/sections/Facilities";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <About />
       <WhyChooseUs />
       <Academics />
+      <Facilities />
     </main>
   );
 }
