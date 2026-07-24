@@ -1,8 +1,10 @@
+import Hero from "@/components/sections/Hero";
+
 function Home() {
   return (
-    <section className="py-20 text-center">
-      <h1 className="text-4xl font-bold">Home Page</h1>
-    </section>
+    <main className="pt-20">
+      <Hero />
+    </main>
   );
 }
 
