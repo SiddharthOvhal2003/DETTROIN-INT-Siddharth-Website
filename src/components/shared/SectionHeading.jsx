@@ -1,27 +1,36 @@
+import { motion } from "framer-motion";
+
 function SectionHeading({
-  subtitle,
+  badge,
   title,
   description,
   center = true,
 }) {
   return (
-    <div className={`mb-12 ${center ? "text-center" : "text-left"}`}>
-      {subtitle && (
-        <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-blue-600">
-          {subtitle}
-        </p>
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className={`mb-16 ${
+        center ? "mx-auto max-w-3xl text-center" : ""
+      }`}
+    >
+      {badge && (
+        <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+          {badge}
+        </span>
       )}
 
-      <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+      <h2 className="mt-6 text-4xl font-bold text-slate-900 lg:text-5xl">
         {title}
       </h2>
 
       {description && (
-        <p className="mx-auto mt-4 max-w-2xl text-slate-600">
+        <p className="mt-6 text-lg leading-8 text-slate-600">
           {description}
         </p>
       )}
-    </div>
+    </motion.div>
   );
 }
 

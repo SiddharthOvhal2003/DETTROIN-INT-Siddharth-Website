@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SectionHeading from "@/components/shared/SectionHeading";
 
 import primaryImg from "@/assets/images/academics/primary.jpg";
 import middleImg from "@/assets/images/academics/middle.jpg";
@@ -32,26 +33,11 @@ function Academics() {
     <section className="bg-slate-50 py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mx-auto mb-16 max-w-3xl text-center"
-        >
-          <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
-            Academics
-          </span>
-
-          <h2 className="mt-6 text-4xl font-bold text-slate-900 lg:text-5xl">
-            Academic Excellence At Every Stage
-          </h2>
-
-          <p className="mt-6 text-lg leading-8 text-slate-600">
-            Our curriculum is designed to inspire curiosity, develop essential
-            skills, and prepare students for lifelong success.
-          </p>
-        </motion.div>
+        <SectionHeading
+          badge="Academics"
+          title="Academic Excellence At Every Stage"
+          description="Our curriculum is designed to inspire curiosity, develop essential skills, and prepare students for lifelong success."
+        />
 
         {/* Cards */}
 

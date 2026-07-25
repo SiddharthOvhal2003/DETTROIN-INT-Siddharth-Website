@@ -4,6 +4,7 @@ import About from "@/components/sections/About";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Academics from "@/components/sections/Academics";
 import Facilities from "@/components/sections/Facilities";
+import LatestNews from "@/components/sections/LatestNews";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <WhyChooseUs />
       <Academics />
       <Facilities />
+      <LatestNews />
     </main>
   );
 }

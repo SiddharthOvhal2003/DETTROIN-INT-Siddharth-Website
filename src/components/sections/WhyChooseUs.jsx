@@ -8,6 +8,8 @@ import {
   Globe,
 } from "lucide-react";
 
+import SectionHeading from "@/components/shared/SectionHeading";
+
 const features = [
   {
     icon: GraduationCap,
@@ -53,26 +55,12 @@ function WhyChooseUs() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mx-auto mb-16 max-w-3xl text-center"
-        >
-          <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
-            Why Choose Us
-          </span>
+        <SectionHeading
+          badge="Why Choose Us"
+          title="Excellence Beyond The Classroom"
+          description="Our school provides an inspiring learning environment where innovation, academic excellence, leadership, and character development come together."
+        />
 
-          <h2 className="mt-6 text-4xl font-bold text-slate-900 lg:text-5xl">
-            Excellence Beyond The Classroom
-          </h2>
-
-          <p className="mt-6 text-lg leading-8 text-slate-600">
-            Our school provides an inspiring learning environment where
-            innovation, academic excellence, leadership, and character
-            development come together.
-          </p>
-        </motion.div>
 
         {/* Cards */}
 
