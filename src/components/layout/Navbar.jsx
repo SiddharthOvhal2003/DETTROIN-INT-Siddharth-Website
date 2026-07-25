@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import Logo from "./Logo";
 import DesktopNav from "./DesktopNav";
@@ -9,6 +10,7 @@ import { Button } from "@/components/ui/button";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,8 +19,9 @@ function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    return () =>
+    return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -47,7 +50,8 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <Button
-            className="hidden rounded-xl bg-blue-600 px-6 py-6 text-white transition-all hover:scale-105 hover:bg-blue-700 lg:flex"
+            onClick={() => navigate("/admissions")}
+            className="hidden rounded-xl bg-blue-600 px-6 py-6 text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700 lg:flex"
           >
             Apply Now
           </Button>

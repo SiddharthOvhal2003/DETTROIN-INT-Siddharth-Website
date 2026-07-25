@@ -1,11 +1,19 @@
-import React from 'react'
+import AdmissionsBanner from "@/components/sections/admissions/AdmissionsBanner";
+import AdmissionProcess from "@/components/sections/admissions/AdmissionProcess";
+import EligibilityDocuments from "@/components/sections/admissions/EligibilityDocuments";
+import AdmissionFAQ from "@/components/sections/admissions/AdmissionFAQ";
+import ApplyNowCTA from "@/components/sections/admissions/ApplyNowCTA";
 
 function Admissions() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <AdmissionsBanner />
+      <AdmissionProcess />
+      <EligibilityDocuments />
+      <AdmissionFAQ />
+      <ApplyNowCTA />
+    </>
+  );
 }
 
-export default Admissions
+export default Admissions;

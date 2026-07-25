@@ -1,11 +1,13 @@
-import React from 'react'
+import GalleryBanner from "@/components/sections/gallery/GalleryBanner";
+import GalleryGrid from "@/components/sections/gallery/GalleryGrid";
 
 function Gallery() {
   return (
-    <div>
-      <h1>Gallery</h1>
-    </div>
-  )
+    <>
+      <GalleryBanner />
+      <GalleryGrid />
+    </>
+  );
 }
 
-export default Gallery
+export default Gallery;
