@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import academicsBanner from "@/assets/images/academics/primary.jpg";
+import { Link } from "react-router-dom";
+import { ChevronRight } from "lucide-react";
 
 function AcademicsBanner() {
   return (
@@ -31,6 +33,19 @@ function AcademicsBanner() {
             Our academic programs encourage curiosity, critical thinking,
             creativity, and lifelong learning in a supportive environment.
           </p>
+
+          {/* Breadcrumb */}
+          <div className="mt-8 flex items-center justify-center gap-2 text-sm text-gray-200">
+            <Link to="/" className="transition hover:text-white">
+              Home
+            </Link>
+
+            <ChevronRight className="h-4 w-4" />
+
+            <span className="text-blue-300">
+              Academics
+            </span>
+          </div>
         </motion.div>
       </div>
     </section>

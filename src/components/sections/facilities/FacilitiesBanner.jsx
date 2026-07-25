@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import facilitiesBanner from "@/assets/images/facilities/computer-lab.jpg";
+import { Link } from "react-router-dom";
+import { ChevronRight } from "lucide-react";
 
 function FacilitiesBanner() {
   return (
-    <section className="relative h-[420px] overflow-hidden">
+    <section className="relative h-[450px] overflow-hidden">
       <img
         src={facilitiesBanner}
         alt="School facilities"
@@ -32,6 +34,22 @@ function FacilitiesBanner() {
             technology, and environment needed to excel academically
             and personally.
           </p>
+
+          {/* Breadcrumb */}
+          <div className="mt-8 flex items-center justify-center gap-2 text-sm text-gray-200">
+            <Link
+              to="/"
+              className="transition hover:text-white"
+            >
+              Home
+            </Link>
+
+            <ChevronRight className="h-4 w-4" />
+
+            <span className="text-blue-300">
+              Facilities
+            </span>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -2,21 +2,28 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 
+import contactBanner from "@/assets/images/contact/contact-banner.jpg";
+
 function ContactBanner() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 py-24">
-      {/* Background Decorations */}
-      <div className="absolute inset-0">
-        <div className="absolute -left-24 top-10 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
-        <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-indigo-300/10 blur-3xl" />
-      </div>
+    <section className="relative h-[60vh] min-h-[450px] overflow-hidden">
+      {/* Background Image */}
+      <img
+        src={contactBanner}
+        alt="Contact Banner"
+        className="absolute inset-0 h-full w-full object-cover object-[center_30%] "
+      />
 
-      <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 text-center">
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/55" />
+
+      {/* Content */}
+      <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 text-center">
         <motion.span
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="mb-4 rounded-full bg-white/15 px-4 py-2 text-sm font-medium text-blue-100"
+          className="mb-4 rounded-full bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm"
         >
           Get in Touch
         </motion.span>
@@ -34,7 +41,7 @@ function ContactBanner() {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="mt-6 max-w-2xl text-lg leading-8 text-blue-100"
+          className="mt-6 max-w-2xl text-lg leading-8 text-gray-200"
         >
           Whether you have questions about admissions, academics, or campus
           facilities, our team is here to help. Reach out to us and we'll be
@@ -46,7 +53,7 @@ function ContactBanner() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="mt-10 flex items-center gap-2 text-sm text-blue-100"
+          className="mt-10 flex items-center gap-2 text-sm text-gray-200"
         >
           <Link to="/" className="transition hover:text-white">
             Home

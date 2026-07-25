@@ -53,8 +53,6 @@ function AdmissionFAQ() {
         </div>
 
         <Accordion
-          type="single"
-          collapsible
           className="space-y-4"
         >
           {faqs.map((faq, index) => (
