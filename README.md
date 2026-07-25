@@ -1,16 +1,49 @@
-# React + Vite
+# DETTROIN Full Stack Internship Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Full Name
+Siddharth Ovhal
 
-Currently, two official plugins are available:
+## Intern ID
+(Your Intern ID) // NOT given yet
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Email
+sid.ovhal09@gmail.com
 
-## React Compiler
+## GitHub Username
+https://github.com/SiddharthOvhal2003
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Selected Website
+https://kisaligarh.com/
 
-## Expanding the ESLint configuration
+## Live Demo
+https://dettroin-int-siddharth-website.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React
+- Vite
+- Tailwind CSS v4
+- Framer Motion
+- React Router
+- Lucide React
+- shadcn/UI (Base UI)
+
+## Features
+
+- Modern UI/UX
+- Fully Responsive
+- Smooth Animations
+- Breadcrumb Navigation
+- Modern Gallery
+- Admissions Page
+- Contact Page
+- 404 Page
+
+## Improvements Made
+
+- Redesigned the entire website with a modern interface
+- Improved responsiveness for all devices
+- Better navigation and user experience
+- Added animations using Framer Motion
+- Organized reusable React components
+- Improved visual hierarchy and accessibility
